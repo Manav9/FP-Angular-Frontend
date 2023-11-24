@@ -1,0 +1,21 @@
+<div class="search-body">
+    <h2>Search Github User</h2>
+    
+    <input type="text" [(ngModel)]="searchQuery" />
+    
+    <button (click)="search()">Search</button>
+    
+    <div class="search-result" *ngFor="let user of searchResults">
+        <a (click)="onUserClick(user.login)" class="result-username">{{ user.login }}</a>
+    </div>
+    <div class="user-profile" *ngIf="isUserDataNotEmpty()">
+        <div class="image-component">
+            <h2>User Image</h2>
+            <img [src]="userData.avatar_url"/>
+        </div>
+        <div class="name-component">
+            <h2>Github Username</h2>
+            <a>{{userData.login}}</a>
+        </div>
+    </div>
+</div>

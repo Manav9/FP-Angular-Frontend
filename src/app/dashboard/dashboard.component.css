@@ -1,0 +1,18 @@
+.nav-bar{
+    margin-top: 20px;
+    display: flex;
+    min-height: 40px;
+    justify-content: end;
+}
+
+.nav-component {
+    width: 200px;
+    margin-right: 20px;
+    display: flex;
+    padding: 20px;
+    justify-content:space-evenly;
+}
+
+.nav-link {
+    text-decoration: none;
+}

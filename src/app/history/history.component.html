@@ -1,0 +1,13 @@
+<div *ngFor="let user of searchHistory" class="history-item">
+  <div class="single-item">
+    <a>Username</a>
+    <br>
+    <a>{{ user.userData.login }}</a>
+  </div>
+  <div>
+    <a>Search Query</a>
+    <br>
+    <a>{{ user.userSearch }}</a>
+  </div>
+</div>
+<button (click)="clearSearch()" class="clear">Clear</button>
