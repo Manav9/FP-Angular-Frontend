@@ -6,7 +6,7 @@ import { HistoryComponent } from './history/history.component';
 const routes: Routes = [
   { path: 'home', component: SearchComponent },
   { path: 'history', component: HistoryComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect to home by default
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({
